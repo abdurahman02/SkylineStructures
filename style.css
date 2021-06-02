@@ -1,0 +1,459 @@
+
+.nav{
+    display: flex;
+    min-width: 100%;
+    margin: none !important;
+    background-color: #585858 !important;
+    position: fixed !important;
+    
+}
+.navbar{
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  transition: top .6s;
+  overflow: hidden;
+  z-index: 1;
+}
+a.nav-link{
+    color: #00305b !important;
+    font-size: 18px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+div.dropdown-menu{
+    background-color: #585858 !important;
+    text-align: center;
+    position: fixed;
+}
+.navbar a:hover {
+    border-bottom: 3px solid #00305b ;
+  }
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+.dropdown-menu a:hover {
+    
+    background-color: #00305b !important;
+  }
+.hearderset{
+    padding-top: 50px;
+    box-sizing: border-box;
+    line-height: 1.4;
+    letter-spacing: 0px;
+}
+.hearderset h{
+    font-size: 48px;
+    font-family: "Playfair Display",serif;
+    font-weight: bold;
+    color: #ffffff;
+
+
+}
+.head h2{
+    font-size: 18px;
+    font-family: "Open Sans",sans-serif;
+
+}
+.cont h3{
+    font-size: 38px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 1.65;
+    word-wrap: break-word;
+
+}
+/*.catch{
+    font-weight: bolder;
+    padding-top: 20px;
+    font-size: 30px;
+    font-family: "Open Sans",sans-serif;
+
+}*/
+.ourmission h1 {
+    padding-top: 5%;
+    font-size: 36px;
+    font-style: normal;
+    text-decoration: overline ;
+    padding-bottom: 10px;
+    border-bottom-style: solid   ;
+    border-bottom-width: 3.1px;
+    text-align: center;
+    
+    
+  }
+  .ourmission p1{
+    color: #585858;
+    font-family: "Open Sans",sans-serif;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 18px;
+    line-height: 1.65;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  .description_container{
+      max-width: 880px;
+      margin: 40px auto 20px;
+  }
+  .description_container .floating-image{
+      max-width: 400px;
+
+  }
+  .description_contaiiner .floating-image.right{
+      float: right;
+      margin-left: 35px;
+      margin-bottom: 10px;
+    
+  }
+  .gap100{
+      padding: 70px 0px;
+  }
+  .col-md-6 h2{
+    font-size: 30px;
+    color: #333;
+    font-family: "Playfair Display",serif;
+    font-weight: 700;
+    display: inline-block;
+    letter-spacing: 0px;
+    word-wrap: break-word;
+
+  }
+  .col-md-6 h2{
+    font-size: 35px;
+    color: #333;
+    font-family: "Playfair Display",serif;
+    font-weight: 700;
+
+  }
+  .col-md-6 p{
+    font-size: 18px;
+
+    color: #585858;
+    font-family: "Open Sans",sans-serif;
+  }
+  .img-fluid{
+      max-width: 55px;
+      max-height: 472px;
+  }
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    background-color: white;
+    width: 100%;
+    height: 450px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin: auto;
+    margin-bottom: 50px;
+    
+  }
+  .flip h1{
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    background-color: white;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    
+  }
+  .flip-box-back h2{
+    color: #ffffff;
+    margin-top: 25px;
+    margin-bottom: 12px;
+  }
+  .flip-box-back p{
+      color: white;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    line-height: 1.42857143;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+  
+  /* Style the front side */
+  .flip-box-front {
+    background-color: white;
+    color: #585858;
+  }
+  .flip-box-front h2{
+
+    font-family: "Playfair Display",serif;
+    font-weight: 600;                                           /* styling text of front box*/
+    color: #ffffff;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    
+    
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: white;
+    text-decoration-color: white;
+    transform: rotateY(180deg);
+  }
+.bag-primary{                         /*footer*/
+  background-color: #00305b;
+}
+.mb-2 p{
+  color: #f1f1f1;
+}
+.list-unstyled p{
+  color: #f1f1f1;
+   
+}
+.list-unstyled i{
+  margin-right: 5px; 
+}
+.map-responsive{                      /*contact page*/
+
+   
+  overflow:hidden;
+
+  padding-bottom:56.25%;
+
+  position:relative;
+
+  height:0;
+
+}
+
+.map-responsive iframe{
+  padding-top: 100px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  left:0;
+
+  top:0;
+
+  height:100%;
+
+  width:95%;
+
+  position:absolute;
+
+}
+.contactus p{
+  padding-top: 50px;
+  font-family: "Playfair Display",serif;
+  color: #00305b;
+  padding-left: 40px;
+
+}
+.col-md-6 h1{
+  padding-top: 50px;
+  text-align: center;
+  color: #00305b;
+  padding-bottom: 10px;
+
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+width: 100%; /* Full width */
+padding: 12px; /* Some padding */ 
+border: 1px solid #ccc; /* Gray border */
+border-radius: 4px; /* Rounded borders */
+box-sizing: border-box; /* Make sure that padding and width stays in place */
+margin-top: 6px; /* Add a top margin */
+margin-bottom: 16px; /* Bottom margin */
+resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+background-color: #00305b;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.form {
+border-radius: 5px;
+background-color: #ffffff;
+padding: 20px;
+
+}
+/*about us page*/
+.bgimg{
+    
+  background: url("images/aboutus.jpg"), rgb(0,0,0,0.8);
+  background-size: cover;
+  background-attachment: fix;
+  width: 100%;
+  height: 350px;
+/*  opacity: 0.7; */
+  background-position: center;
+  
+  
+}
+
+.heard{
+    padding-top: 100px;
+    box-sizing: border-box;
+    line-height: 1.4;
+    letter-spacing: 0px;
+    animation: transition 0.75s;
+
+}
+
+.heard h1{
+    font-family: "proxima-nova", Helvetica, Arial, Sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: -.02em;
+    color: #fff;
+    transition: translate(-50%,-50%);
+    padding-top: 2%;
+
+}
+body{margin-top:20px;
+background:#eee;
+}
+.team-style1 {
+    position: relative;
+}
+.team-style1 .team-img {
+    padding-top: 50px;
+    position: relative;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    text-align: center;
+}
+.team-style1 .team-img img {
+    display: inline-block;
+    
+}
+
+.team-style1 .team-info {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    background: #00305b;
+    text-align: center;
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+.team-style1 .team-info h6 {
+    display: block;
+    color: #fff;
+    text-transform: capitalize;
+}
+.team-style1 .team-info small {
+    display: block;
+    color: #fff;
+}
+@media screen and (max-width: 991px) {
+    .team-style1 .team-info {
+        padding: 15px;
+    }
+}
+
+ .cards{
+     margin-bottom: 5%;
+    
+ }
+ .heard{
+  padding-top: 100px;
+  box-sizing: border-box;
+  line-height: 1.4;
+  letter-spacing: 0px;
+  animation: transition 0.75s;
+
+}
+
+.heard h{
+  font-family: "proxima-nova", Helvetica, Arial, Sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: -.02em;
+  color: #fff;
+  transition: translate(-50%,-50%);
+
+}
+body{margin-top:20px;
+background:#eee;
+}
+.team-style1 {
+  position: relative;
+}
+.team-style1 .team-img {
+  padding-top: 50px;
+  position: relative;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  text-align: center;
+}
+.team-style1 .team-img img {
+  display: inline-block;
+  
+}
+
+.team-style1 .team-info {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 20px;
+  background: #00305b;
+  text-align: center;
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+.team-style1 .team-info h6 {
+  display: block;
+  color: #fff;
+  text-transform: capitalize;
+}
+.team-style1 .team-info small {
+  display: block;
+  color: #fff;
+}
+@media screen and (max-width: 991px) {
+  .team-style1 .team-info {
+      padding: 15px;
+  } 
+
+
